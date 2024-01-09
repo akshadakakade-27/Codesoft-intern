@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(45deg,#2d9496f1,#0766AD);
+        }
+        .container{
+            border: 5px solid rgb(32, 20, 29);
+            padding: 20px;
+            border-radius: 50px;
+            background-color:#bd8bf1d4;
+            box-shadow: 20px 20px 30px rgba(21, 18, 18, 0.362), -20px -20px 30px rgba(18, 18, 18, 0.332);
+        }
+        input{
+            width: 300px;
+            border-radius: 25px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+            background-color: transparent;
+            font-size: 40px;
+            text-align: right;
+            cursor: pointer;
+        }
+        input::placeholder{
+            color: rgb(10, 10, 10);
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            border-radius: 19px;
+            background-color: transparent;
+            font-size: 20px;
+            box-shadow:  0px 3px 15px rgba(0, 0, 0, 0.558);
+            cursor: pointer;
+        }
+        .equal{
+            background-color: rgba(246, 202, 7, 0.836);
+        }
+        .operator{
+            color: rgb(222, 241, 10);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="0" id="inputbar">
+        <div>
+            <button class="equal">=</button>
+            <button class="operator">AC</button>
+            <button class="operator">DEL</button>
+            <button class="operator">/</button>
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">+</button>
+        </div>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">-</button>
+        </div>
+        <div>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="operator">%</button>
+        </div>
+    </div>
+    <script src="calcolator.js"></script>
+</body>
+</html>
